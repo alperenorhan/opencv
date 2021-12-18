@@ -1,4 +1,4 @@
-#Libraries
+# Libraries
 
 import cv2
 import numpy as np
@@ -21,7 +21,7 @@ cv2.createTrackbar('HighV', 'Trackbar', 255, 255, nothing)
 
 while 1:
     _, frame = cap.read()
-    frame = imutils.resize(frame, 300, 300)
+    frame = imutils.resize(frame, 500, 500)
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
     # Get Trackbar Positions
